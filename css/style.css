@@ -136,6 +136,9 @@ a.nav-link:hover {
    .woocommerce_options{
     display: none;
 } 
+#desktop_menu{
+  display: none !important;
+}
 ul.navbar-nav li:last-child{
     display: none;
 }
