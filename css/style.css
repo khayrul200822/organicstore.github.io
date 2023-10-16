@@ -12,8 +12,12 @@
     --primary_color: #88B813;
     --border_color: rgba(130,130,130,.25);
 }
-
-
+a{
+  text-decoration: none !important;
+}
+.sub_drp_link{
+  color: black !important;
+}
 /* header style start here */
 
 /* toggler icon style */

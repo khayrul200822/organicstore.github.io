@@ -13,12 +13,6 @@ a {
     text-decoration: none;
 }
 
-h2 {
-    text-align: center;
-    margin: 20px auto;
-    color: #fff;
-}
-
 .accordion-menu {
     width: 100%;
     background: #fff;
@@ -36,28 +30,29 @@ h2 {
 .accordion-menu li:last-child .dropdownlink {
     border-bottom: 0;
 }
-
+.dropdownlink , .nrml_link{
+     padding: 10px 15px;
+}
 .dropdownlink {
     cursor: pointer;
     display: block;
-    padding: 10px 15px;
-    font-size: 18px;
-    
     color: #212121;
+    font-size: 14px;
     position: relative;
     transition: all 0.4s ease-out;
-
 }
 
 .dropdownlink i {
     position: absolute;
-    top: 17px;
-    left: 16px;
-}
-
-.dropdownlink .fa-chevron-down {
-    right: 12px;
+    right: 0px;
+    top: 0px;
     left: auto;
+    font-size: 18px;
+    padding: 11.5px 10px;
+    background: #FBFBFB;
+    border-left: 1px solid var(--border_color);
+    border-bottom: 1px solid var(--border_color);
+    border-top: none !important;
 }
 
 .submenuItems {
@@ -65,18 +60,18 @@ h2 {
     background: white
 }
 
-.submenuItems li {
-    border-bottom: 1px solid var(--border_color);
-}
+
 
 .submenuItems a {
     display: block;
     text-decoration: none;
-    color: #727272;
-    padding: 10px 20px;
+    color: BLACK;
     transition: all 0.4s ease-out;
+    font-size: 14px;
 }
-
+.dropdownlink i:last-child{
+    display: none;
+}
 .dropdownlink:hover{
     color: var(--primary_color);
     transition: .3s;
@@ -85,7 +80,15 @@ h2 {
 ul.accordion-menu li:first-child {
     border-top: 1px solid var(--border_color);
 }
-
+ul.accordion-menu li {
+    border-top: 1px solid var(--border_color);
+}
 ul.accordion-menu li:last-child {
     border-bottom: 1px solid var(--border_color);
+}
+
+@media only screen and (min-width: 992px) {
+    .accordion-menu{
+        display: none;
+    }
 }
