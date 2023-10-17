@@ -38,7 +38,26 @@
           <!-- toggle button -->
           <div class="button_and_search d-flex align-items-center ">
             <div class="search_icon align-items-center  me-4">
-              <i class="fa-solid fa-magnifying-glass"></i>
+             
+              <!-- Close Button -->
+              <div class="close-btn">
+                <span class="fas fa-times"></span>
+              </div>
+
+              <!-- Search Wrapper -->
+              <div class="wrapper">
+                <!-- Search Button -->
+                <div class="search-btn">
+                  <span> <i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <!-- Search Box -->
+                <div class="search-data">
+                  <input type="text" required>
+                  <div class="line"></div>
+                  <label>Type to search..</label>
+                  <span> <i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+              </div>
             </div>
 
             <button class="navbar-toggler third-button" type="button" data-bs-toggle="collapse"
@@ -55,16 +74,10 @@
             <!-- mobile menu -->
             <ul class="accordion-menu ps-0">
               <li>
-                <a href="#" class="dropdownlink"> HOME
-
-                </a>
-
+                <a href="#" class="dropdownlink"> HOME</a>
               </li>
               <li>
-                <a href="#" class="dropdownlink"> BLOG
-
-                </a>
-
+                <a href="#" class="dropdownlink"> BLOG</a>
               </li>
               <li>
                 <a class="dropdownlink"> SHOP
@@ -121,13 +134,14 @@
                 <ul class="ps-0 submenuItems">
                   <li><a href="#" class="nrml_link">ELEMENTS A</a></li>
                   <li><a class="dropdownlink sub_drp_link">ELEMENTS B
-                    <i id="plus_icon" class="fa-solid fa-plus" aria-hidden="true"></i>
-                    <i id="minus_icon" class="fa-solid fa-minus"></i>
-                  </a>
-                  <ul class="ps-0  submenuItems">
-                    <li><a href="#" class="nrml_link">ELEMENTS B2</a></li>
-                    <li><a href="#" class="nrml_link">ELEMENTS B3</a></li>
-                  </ul></li>
+                      <i id="plus_icon" class="fa-solid fa-plus" aria-hidden="true"></i>
+                      <i id="minus_icon" class="fa-solid fa-minus"></i>
+                    </a>
+                    <ul class="ps-0  submenuItems">
+                      <li><a href="#" class="nrml_link">ELEMENTS B2</a></li>
+                      <li><a href="#" class="nrml_link">ELEMENTS B3</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#" class="nrml_link">ELEMENTS C</a></li>
                 </ul>
               </li>
