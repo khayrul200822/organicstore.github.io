@@ -14,9 +14,9 @@
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    autoplay: true, // Enable auto play
-    autoplayTimeout: 1000, // Set the time interval (1 second in this case)
-    autoplayHoverPause: true,
+    // autoplay: true, // Enable auto play
+    // autoplayTimeout: 1000, // Set the time interval (1 second in this case)
+    // autoplayHoverPause: true,
      
     
   });

@@ -22,7 +22,9 @@ a {
 }
 
 /* header style start here */
-
+header#header {
+  border-bottom: 1px solid var(--border_color);
+}
 /* toggler icon style */
 .navbar-toggler:focus {
   box-shadow: none !important;
@@ -336,34 +338,56 @@ div#owl_slider .single_slider .p_img_4{
   transform: translate(-147px, -130px) rotate(326deg);
   width: 15%;
 }
+div#owl_slider .single_slider .product_title .right_text {
+  right: -378px;
+  top: -117px;
+  position: absolute;
+  z-index: 4;
+}
+div#owl_slider .single_slider .product_title .left_text {position: absolute;left: -390px;top: -35px;z-index: 3;}
 /*hero section style end here*/
 
 
 
-
-
-
-
-
-
-
-/* @media only screen and (max-width: 768px) {
-  .button_and_search .dstp_search_bar .dstp_search_wrapper .dstp_search_box {
-    width: 25rem;
-  }
-  div#owl_slider .single_slider .p_img_1{
-    width: 41%;
-    transform:translate(50px, 20px);
-  }
-div#owl_slider .single_slider .p_img_4{
-transform: translate(-94px, 133px);
-width: 50%;
+/* owl carousel some custom style */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0px, -330px);
 }
-} */
+.owl-theme .owl-nav button {
+  width: 40px;
+  height: 40px;
+  display: grid !important;
+  place-items: center;
+  background: #9A9B9B!important;
+  color: white !important;
+  font-size: 35px !important;
+  transition: .3s;
+}
+.owl-theme .owl-nav button:hover {
+  color: white !important;
+  background: black !important;
+  transition: .3s !important;
+}
+.owl-theme .owl-nav button span {
+  width: 100% !important;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
-/* ***responsive code**** */
+
+
+
+
+/* ***************************responsive code************************* */
+
+/* responsive code for desktop screen */
 @media only screen and (max-width: 992px) {
   .woocommerce_options {
     display: none;
@@ -425,6 +449,9 @@ div#owl_slider .single_slider .product_title .left_text {
 
 }
 
+
+/* responsive code for md desktop screen */
+
 @media only screen and (max-width: 900px) {
   div#owl_slider .single_slider .p_img_1{
     width: 42%;
@@ -459,7 +486,7 @@ div#owl_slider .single_slider .product_title .right_text {
 }
 }
 
-
+/* responsive code for laptop screen */
 
 @media only screen and (max-width: 768px) {
   /* div#owl_slider .single_slider .product_title{
@@ -489,6 +516,8 @@ div#owl_slider .single_slider .p_img_3 {
 }
 
 }
+
+/* responsive code for tablets screen */
 @media only screen and (max-width: 600px) {
 
   div#owl_slider .single_slider .p_img_1 {
@@ -534,7 +563,7 @@ div#owl_slider .single_slider .product_title .left_text {
 
 
 
-
+/* responsive code for mobile screen */
 @media only screen and (max-width: 502px) {
   div#owl_slider .single_slider .bg_shape {
     width: 275px;
@@ -555,7 +584,7 @@ div#owl_slider .single_slider .p_img_4 {
 
 }
 
-
+/* responsive code for large screen screen */
 @media only screen and (min-width: 992px) {
   .button_and_search .search_bar {
     display: none;
