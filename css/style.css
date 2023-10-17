@@ -295,6 +295,7 @@ div#owl_slider .single_slider {
   padding: 20px 30px;
   background-color: white;
   z-index: 1;
+  overflow: hidden;
 }
 
 div#owl_slider .single_slider .slide_child {
