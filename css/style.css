@@ -46,6 +46,7 @@ a {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  z-index: 1;
 }
 
 .nav_animated_icon span {
@@ -206,13 +207,18 @@ opacity: 0;
 
 .button_and_search .dstp_search_bar {
   position: absolute;
-  min-width: 1180px;
-  height: 90vh;
+  width: 100%;
+  height: 93vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
   background: transparent;
-  top: 25px;
-  right: -2.8%;
+  top: 20px;
+  right: 0%;
   backdrop-filter: blur(5px);
   border: 1px solid crimson;
+  box-shadow: -1px 3px 0px 20px #9999;
+  z-index: 2;
 }
 
 
@@ -241,6 +247,11 @@ opacity: 0;
 .button_and_search .dstp_search_bar .dstp_search_wrapper .dstp_search_box i {
   position: absolute;
   right: 10px;
+  color: var(--primary_color);
+}
+.button_and_search .dstp_search_bar span:hover{
+  color: var(--primary_color);
+  transition: .2s;
 }
 .button_and_search .dstp_search_bar span {
   font-size: 30px;
@@ -250,9 +261,28 @@ opacity: 0;
 }
 /* full width search bar for desktop screen style end here  */
 
+/* product item icon style */
+.button_and_search .product_msg {
+  width: 200px;
+  position: absolute;
+  right: 14%;
+  top: 62px;
+ display: none;
+}
 
+.button_and_search .product_msg span {
+  padding: 15px 20px;
+  font-size: 14px;
+  background: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+/* ========================================= */
 
-
+@media only screen and (max-width: 768px) {
+  .button_and_search .dstp_search_bar .dstp_search_wrapper .dstp_search_box{
+    width: 25rem;
+  }
+}
 
 
 
