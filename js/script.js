@@ -1,3 +1,46 @@
+
+//get element
+const search_bar_icon = document.getElementById("search_icon");
+const mobile_search_bar = document.querySelector(".mobile_search");
+const desktop_search_icon = document.getElementById("desktop_search_icon");
+const desktop_close_icon = document.getElementById("dstp_close_btn");
+
+
+//toggle search bar for desktop screen script
+
+desktop_search_icon.addEventListener("click", () => {
+  
+})
+
+
+
+
+
+
+
+//toggle search bar for mobile screen script
+let isMobileSearchVisible = false;
+
+search_bar_icon.addEventListener("click", () => {
+  if (isMobileSearchVisible) {
+    mobile_search_bar.style.transform = "translate(0px, 30%)";
+    mobile_search_bar.style.opacity = "0";
+  } else {
+    mobile_search_bar.style.display = "unset";
+    setTimeout(() => {
+       mobile_search_bar.style.transform = "translate(0px, 0px)";
+    mobile_search_bar.style.opacity = "1";
+    }, 0);
+   
+  }
+  
+  isMobileSearchVisible = !isMobileSearchVisible;
+});
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var thirdButton = document.querySelector('.third-button');
     var animatedIcon = document.querySelector('.nav_animated_icon');
@@ -9,28 +52,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//script for full width search bar
 
-$(".search-btn").click(function(){
-    $(".wrapper").addClass("active");
-    $(this).css("display", "none");
-    $(".search-data").fadeIn(500);
-    $(".close-btn").fadeIn(500);
-    $(".search-data .line").addClass("active");
-    setTimeout(function(){
-      $("input").focus();
-      $(".search-data label").fadeIn(500);
-      $(".search-data span").fadeIn(500);
-    }, 800);
-   });
-  
-  $(".close-btn").click(function(){
-    $(".wrapper").removeClass("active");
-    $(".search-btn").fadeIn(800);
-    $(".search-data").fadeOut(500);
-    $(".close-btn").fadeOut(500);
-    $(".search-data .line").removeClass("active");
-    $("input").val("");
-    $(".search-data label").fadeOut(500);
-    $(".search-data span").fadeOut(500);
-  });

@@ -37,28 +37,27 @@
 
           <!-- toggle button -->
           <div class="button_and_search d-flex align-items-center ">
-            <div class="search_icon align-items-center  me-4">
-             
-              <!-- Close Button -->
-              <div class="close-btn">
-                <span class="fas fa-times"></span>
-              </div>
-
-              <!-- Search Wrapper -->
-              <div class="wrapper">
-                <!-- Search Button -->
-                <div class="search-btn">
-                  <span> <i class="fa-solid fa-magnifying-glass"></i></span>
+            <div class="dstp_search_bar">
+              <span id="dstp_close_btn"><i class="fa-solid fa-xmark"></i></span>
+              <div class="dstp_search_wrapper">
+                <div class="dstp_search_box">
+                  <input type="text" placeholder="Enter Search Keyword.... ">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <!-- Search Box -->
-                <div class="search-data">
-                  <input type="text" required>
-                  <div class="line"></div>
-                  <label>Type to search..</label>
-                  <span> <i class="fa-solid fa-magnifying-glass"></i></span>
+
+              </div>
+            </div>
+            <div class="search_bar align-items-center  me-4">
+              <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
+
+              <div class="mobile_search">
+                <div class="search_wrapper">
+                  <input type="text" placeholder="Enter Search Keyword.... ">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
               </div>
             </div>
+
 
             <button class="navbar-toggler third-button" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -154,7 +153,7 @@
             </ul>
 
 
-
+            <!-- desktop menu start here -->
 
             <ul id="desktop_menu" class="navbar-nav navbar-light" class="menu-main">
               <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
@@ -220,8 +219,10 @@
               <li class="nav-item"><a class="nav-link" href="#">PAGES </a></li>
               <li class="nav-item"><a class="nav-link" href="#">ELEMENTS</a></li>
               <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i id="desktop_search_icon"
+                    class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
+            <!-- desktop menu end here -->
           </div>
           <ul class="woocommerce_options justify-content-end mb-0  ps-0">
 
@@ -233,6 +234,7 @@
             <li class="list-unstyled me-3"><a href="#"><i class="fa-regular fa-heart"></i> </a></li>
 
           </ul>
+
 
 
 
