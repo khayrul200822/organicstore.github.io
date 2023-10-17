@@ -8,9 +8,7 @@
     -webkit-tap-highlight-color: transparent;
     position: relative
 }
-.owl-wrapper {
-    width: 100% !important;
-}
+
 .owl-carousel {
     display: none;
     width: 100%;

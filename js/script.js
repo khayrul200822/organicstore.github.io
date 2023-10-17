@@ -1,3 +1,27 @@
+//****************owl carousel script**********
+ //owl carousel script
+ $(document).ready(function () {
+
+  $("#owl_slider").owlCarousel({
+
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      items: 1,
+      nav:true,
+      loop: true, 
+       itemsDesktop: false,
+      itemsDesktopSmall: false,
+      itemsTablet: false,
+      itemsMobile: false,// Enable loop mode
+    autoplay: true, // Enable auto play
+    autoplayTimeout: 1000, // Set the time interval (1 second in this case)
+    autoplayHoverPause: true,
+     
+
+  });
+
+});
+
 
 //get element
 const search_bar_icon = document.getElementById("search_icon");
@@ -92,24 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//****************owl carousel script**********
- //owl carousel script
- $(document).ready(function () {
 
-  $("#owl_slider").owlCarousel({
-
-      slideSpeed: 300,
-      paginationSpeed: 400,
-      items: 1,
-      nav:true,
-      itemsDesktop: false,
-      itemsDesktopSmall: false,
-      itemsTablet: false,
-      itemsMobile: false
-
-  });
-
-});
 
 
 
