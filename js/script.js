@@ -61,6 +61,7 @@ product_item.addEventListener("mouseout", () => {
 let isMobileSearchVisible = false;
 
 search_bar_icon.addEventListener("click", () => {
+  console.log("hello world")
   if (isMobileSearchVisible) {
     mobile_search_bar.style.transform = "translate(0px, 30%)";
     mobile_search_bar.style.opacity = "0";
@@ -100,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
       slideSpeed: 300,
       paginationSpeed: 400,
       items: 1,
+      nav:true,
       itemsDesktop: false,
       itemsDesktopSmall: false,
       itemsTablet: false,
