@@ -7,6 +7,7 @@ const desktop_close_icon = document.getElementById("dstp_close_btn");
 const desktop_search_bar = document.querySelector(".dstp_search_bar");
 const product_item = document.getElementById("product_item");
 const product_item_message = document.querySelector(".product_msg");
+const product_group = document.querySelectorAll(".p_group")
 
 
 //desktop search bar toggle function
@@ -90,7 +91,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// product section button script here
+let previousButton = product_group[0]; // Set the first button as default active
 
+previousButton.style.color = "#88B813"; // Set the default color
+
+for (let i = 0; i < 5; i++) {
+  product_group[i].addEventListener("click", () => {
+    // Reset color of previous button
+    if (previousButton !== product_group[i]) {
+      previousButton.style.color = "";
+    }
+
+    // Set color of current button
+    product_group[i].style.color = "#88B813";
+
+    // Update previous button reference
+    previousButton = product_group[i];
+
+    console.log("button clicked");
+  });
+}
 
 //****************owl carousel script**********
  //owl carousel script
@@ -108,9 +129,13 @@ document.addEventListener('DOMContentLoaded', function() {
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    // autoplay: true, // Enable auto play
-    // autoplayTimeout: 1000, // Set the time interval (1 second in this case)
-    // autoplayHoverPause: true,
+    autoplay: true, // Enable auto play
+    autoplayTimeout: 2000, // Set the time interval (1 second in this case)
+    autoplayHoverPause: true,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn"
+   
+   
      
     
   });
