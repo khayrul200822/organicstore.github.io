@@ -19,7 +19,7 @@ function PlusHandleClick() {
 function MinusHandleClick() {
     this.style.display = "none";
     const dropdownIconPlus = this.previousElementSibling;
-    console.log(dropdownIconPlus)
+   
     dropdownIconPlus.style.display = "unset";
     dropdownIconPlus.style.backgroundColor = "white";
   

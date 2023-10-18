@@ -94,7 +94,7 @@ product_item.addEventListener("mouseout", () => {
 let isMobileSearchVisible = false;
 
 search_bar_icon.addEventListener("click", () => {
-  console.log("hello world")
+
   if (isMobileSearchVisible) {
     mobile_search_bar.style.transform = "translate(0px, 30%)";
     mobile_search_bar.style.opacity = "0";
@@ -143,7 +143,6 @@ for (let i = 0; i < 5; i++) {
     // Update previous button reference
     previousButton = product_group[i];
 
-    console.log("button clicked");
   });
 }
 
