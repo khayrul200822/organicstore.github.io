@@ -66,9 +66,11 @@ search_bar_icon.addEventListener("click", () => {
   if (isMobileSearchVisible) {
     mobile_search_bar.style.transform = "translate(0px, 30%)";
     mobile_search_bar.style.opacity = "0";
+    mobile_search_bar.style.visibility = "hidden";
   } else {
     mobile_search_bar.style.display = "unset";
     setTimeout(() => {
+      mobile_search_bar.style.visibility = "visible";
        mobile_search_bar.style.transform = "translate(0px, 0px)";
     mobile_search_bar.style.opacity = "1";
     }, 0);
@@ -129,11 +131,11 @@ for (let i = 0; i < 5; i++) {
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    autoplay: true, // Enable auto play
-    autoplayTimeout: 2000, // Set the time interval (1 second in this case)
-    autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn"
+    // autoplay: true, // Enable auto play
+    // autoplayTimeout: 2000, // Set the time interval (1 second in this case)
+    // autoplayHoverPause: true,
+    // animateOut: "fadeOut",
+    // animateIn: "fadeIn"
    
    
      
@@ -141,6 +143,9 @@ for (let i = 0; i < 5; i++) {
   });
 
 });
+
+
+
 
 //Mixitup plugin call
 var mixer = mixitup('.product_slider');
