@@ -22,7 +22,7 @@ function MinusHandleClick() {
     console.log(dropdownIconPlus)
     dropdownIconPlus.style.display = "unset";
     dropdownIconPlus.style.backgroundColor = "white";
-    dropdownIconPlus.style.color = "#88B813";
+  
     
 }
 

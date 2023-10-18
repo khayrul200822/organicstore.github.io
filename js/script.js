@@ -131,11 +131,15 @@ for (let i = 0; i < 5; i++) {
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    // autoplay: true, // Enable auto play
-    // autoplayTimeout: 2000, // Set the time interval (1 second in this case)
-    // autoplayHoverPause: true,
-    // animateOut: "fadeOut",
-    // animateIn: "fadeIn"
+    autoplay: true, // Enable auto play
+    autoplayTimeout: 2000, // Set the time interval (1 second in this case)
+    autoplayHoverPause: true,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    onTranslated: function(event) {
+      $('.included-items').removeClass('active'); // Reset all items
+      $('.owl-item.active .included-items').addClass('active'); // Add active class to included items in active slide
+  }
    
    
      

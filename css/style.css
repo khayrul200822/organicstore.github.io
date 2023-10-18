@@ -178,6 +178,7 @@ a.nav-link:hover {
   transform: translate(0px, 30%);
   opacity: 0;
   transition: .6s;
+ visibility : hidden;
 }
 
 .search_bar .mobile_search .search_wrapper {
@@ -548,7 +549,7 @@ section#product_section .product_wrapper .product_slider .product_img_content .p
   position: absolute;
   bottom: 0;
   height: 100%;
-  width: 60%;
+  width: 90%;
   align-items: center;
 }
 
