@@ -1,28 +1,3 @@
-//****************owl carousel script**********
- //owl carousel script
- $(document).ready(function () {
-
-  $(".owl-carousel").owlCarousel({
-
-      slideSpeed: 300,
-      paginationSpeed: 400,
-      items: 1,
-      dots: false,
-      nav:true,
-      loop: true, 
-       itemsDesktop: false,
-      itemsDesktopSmall: false,
-      itemsTablet: false,
-      itemsMobile: false,// Enable loop mode
-    // autoplay: true, // Enable auto play
-    // autoplayTimeout: 1000, // Set the time interval (1 second in this case)
-    // autoplayHoverPause: true,
-     
-    
-  });
-
-});
-
 
 //get element
 const search_bar_icon = document.getElementById("search_icon");
@@ -114,6 +89,36 @@ document.addEventListener('DOMContentLoaded', function() {
         animatedIcon.classList.toggle('open');
     });
 });
+
+
+
+//****************owl carousel script**********
+ //owl carousel script
+ $(document).ready(function () {
+
+  $(".owl-carousel").owlCarousel({
+
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      items: 1,
+      dots: false,
+      nav:true,
+      loop: true, 
+       itemsDesktop: false,
+      itemsDesktopSmall: false,
+      itemsTablet: false,
+      itemsMobile: false,// Enable loop mode
+    // autoplay: true, // Enable auto play
+    // autoplayTimeout: 1000, // Set the time interval (1 second in this case)
+    // autoplayHoverPause: true,
+     
+    
+  });
+
+});
+
+//Mixitup plugin call
+var mixer = mixitup('.product_slider');
 
 
 

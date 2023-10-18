@@ -357,18 +357,24 @@
         <div class="product_wrapper">
           <div class="section_title">
             <h2>TOP SELLING PRODUCT</h2>
-            <p>If success is a process with a number of defined steps, then it is just like any other process. So, what is the first step in any process? </p>
+            <p>If success is a process with a number of defined steps, then it is just like any other process. So, what
+              is the first step in any process? </p>
           </div>
 
           <div class="product_category d-flex flex-wrap justify-content-center ">
-
+            <!-- <button type="button" data-filter="all">All</button> -->
+            <button class="me-4" type="button" data-filter=".Newest">Newest</button>
+            <button class="me-4" type="button" data-filter=".Featured">Featured</button>
+            <button class="me-4" type="button" data-filter=".Best_Seller">Best Sellers</button>
+            <button class="me-4" type="button" data-filter=".On_sale">On sale</button>
+            <button class="" type="button" data-filter=".Cheapest">Cheapest</button>
           </div>
-
           
           <div class="product_slider row">
             <!-- single product item 1-->
-            <div class=" col-6 col-md-4  col-xl-3">
-              <div class="single_product ms-2">
+
+            <div class=" col-6 col-md-4  col-xl-3 mix Newest Best_Seller Cheapest" data-order="1">
+              <div class="single_product ms-2 ">
                 <div class="product_img_content">
                   <div class="product_img">
                     <img class="img-fluid " src="./img/p_a1.jpg" alt="./img/p_a1.jpg">
@@ -394,9 +400,236 @@
               </div>
             </div>
 
+
+            <!-- single product item 2-->
+
+
+
+            <div class=" col-6 col-md-4  col-xl-3 mix Newest" data-order="2">
+              <div class="single_product ms-2 mb-4 " >
+                <div class="product_img_content">
+                  <div class="product_img">
+                    <img class="img-fluid font_img" src="./img/man_sut.jpg" alt="./img/man_sut.jpg">
+                    <img class="img-fluid back_img" src="./img/man_sut_back.jpg" alt="./img/man_sut_back.jpg">
+                  </div>
+                  <div class="product_manage d-flex justify-content-center">
+                    <div class="product_option">
+                      <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                      <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                    </div>
+                    <div class="view_btn  ">
+                      <button type="submit">Quick View</button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="product_info">
+                  <span class="product_group">Accessories</span>
+                  <h4>La-ta-da Boho Chic Head Wrap</h4>
+                  <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- single product item 3-->
+
+
+
+            <div class=" col-6 col-md-4  col-xl-3 mix Newest Best_Seller On_sale Cheapest"data-order="3">
+              <div class="single_product ms-2 mb-4 " >
+                <div class="product_img_content">
+                  <div class="product_img">
+                    <img class="img-fluid font_img" src="./img/watch.jpg" alt="./img/watch.jpg">
+                    <img class="img-fluid back_img" src="./img/watch_back.jpg" alt="./img/watch_back.jpg">
+                  </div>
+                  <div class="product_manage d-flex justify-content-center">
+                    <div class="product_option">
+
+                      <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                    </div>
+                    <div class="view_btn  ">
+                      <button type="submit">Quick View</button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="product_info">
+                  <span class="product_group">Accessories</span>
+                  <h4>La-ta-da Boho Chic Head Wrap</h4>
+                  <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- single product item 4-->
+          
+              <div class=" col-6 col-md-4  col-xl-3 mix Featured Best_Seller Cheapest"data-order="4">
+                <div class="single_product ms-2 mb-4 " >
+                  <div class="product_img_content">
+                    <div class="product_img">
+                      <img class="img-fluid" src="./img/man_ganji.jpg" alt="./img/man_ganji.jpg">
+
+                    </div>
+                    <div class="product_manage d-flex justify-content-center">
+                      <div class="product_option">
+                        <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                      </div>
+                      <div class="view_btn  ">
+                        <button type="submit">Quick View</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="product_info">
+                    <span class="product_group">Accessories</span>
+                    <h4>La-ta-da Boho Chic Head Wrap</h4>
+                    <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- single product item 5-->
+
+              <div class=" col-6 col-md-4  col-xl-3 mix Featured Best_Seller On_sale" data-order="5">
+                <div class="single_product ms-2 mb-4 " >
+                  <div class="product_img_content">
+                    <div class="product_img">
+                      <img class="img-fluid" src="./img/man_jcket.jpg" alt="./img/man_jcket.jpg">
+
+                    </div>
+                    <div class="product_manage d-flex justify-content-center">
+                      <div class="product_option">
+                        <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                      </div>
+                      <div class="view_btn  ">
+                        <button type="submit">Quick View</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="product_info">
+                    <span class="product_group">Accessories</span>
+                    <h4>La-ta-da Boho Chic Head Wrap</h4>
+                    <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- single product item 6-->
+
+              <div class=" col-6 col-md-4  col-xl-3 mix Featured Cheapest" data-order="6">
+                <div class="single_product ms-2 mb-4 " >
+                  <div class="product_img_content">
+                    <div class="product_img">
+                      <img class="img-fluid" src="./img/man_tshirt.jpg" alt="./img/man_tshirt.jpg">
+
+                    </div>
+                    <div class="product_manage d-flex justify-content-center">
+                      <div class="product_option">
+                        <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                      </div>
+                      <div class="view_btn  ">
+                        <button type="submit">Quick View</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="product_info">
+                    <span class="product_group">Accessories</span>
+                    <h4>La-ta-da Boho Chic Head Wrap</h4>
+                    <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- single product item 7-->
+
+              <div class=" col-6 col-md-4  col-xl-3 mix Newest Featured Best_Seller" data-order="7">
+                <div class="single_product ms-2 mb-4 " >
+                  <div class="product_img_content">
+                    <div class="product_img">
+                      <img class="img-fluid" src="./img/man_shart.jpg" alt="./img/man_shart.jpg">
+
+                    </div>
+                    <div class="product_manage d-flex justify-content-center">
+                      <div class="product_option">
+                        <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+                      </div>
+                      <div class="view_btn  ">
+                        <button type="submit">Quick View</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="product_info">
+                    <span class="product_group">Accessories</span>
+                    <h4>La-ta-da Boho Chic Head Wrap</h4>
+                    <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+                  </div>
+                </div>
+
+              </div>
+
+
+ <!-- single product item 8-->
+
+ <div class=" col-6 col-md-4  col-xl-3 mix Newest Featured Best_Seller" data-order="7">
+  <div class="single_product ms-2 mb-4 " >
+    <div class="product_img_content">
+      <div class="product_img">
+        <img class="img-fluid font_img" src="./img/ban_jersey.jpg" alt="./img/ban_jersey.jpg">
+        <img class="img-fluid back_img" src="./img/ban_jersey_back.jpg" alt="./img/ban_jersey_back.jpg">
+
+      </div>
+      <div class="product_manage d-flex justify-content-center">
+        <div class="product_option">
+          <a class="me-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a class="me-2" href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></a>
+        </div>
+        <div class="view_btn  ">
+          <button type="submit">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="product_info">
+      <span class="product_group">Accessories</span>
+      <h4>La-ta-da Boho Chic Head Wrap</h4>
+      <span class="product_price"><del class="me-2">£ 22.00</del>£ 20.00</span>
+    </div>
+  </div>
+
+</div>
+
+
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!--*************Product section end here**************-->
@@ -423,7 +656,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--mobile menu accordion-->
   <script src="./js/accordion.js"></script>
-
+  <!--mixitup javascript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--owl carousel js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
