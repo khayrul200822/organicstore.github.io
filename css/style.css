@@ -740,7 +740,21 @@ section#product_section .product_wrapper .product_category {
 
 }
 
+.included-items {
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 0.5s; /* Add transition effect for opacity */
+}
 
+.included-items.active {
+  opacity: 1; /* When active class is added, set opacity to 1 */
+}
+
+.included-item {
+  transform: rotate(90deg);
+  /* Add any styles you want for the included items */
+  /* For example, you can set initial position, opacity, etc. */
+  /* This could be animations or transforms as needed */
+}
 /* responsive code for md desktop screen */
 
 @media only screen and (max-width: 900px) {
