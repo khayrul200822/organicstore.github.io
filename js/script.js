@@ -7,7 +7,36 @@ const desktop_close_icon = document.getElementById("dstp_close_btn");
 const desktop_search_bar = document.querySelector(".dstp_search_bar");
 const product_item = document.getElementById("product_item");
 const product_item_message = document.querySelector(".product_msg");
-const product_group = document.querySelectorAll(".p_group")
+const product_group = document.querySelectorAll(".p_group");
+const product_title = document.querySelectorAll(".p_title");
+const single_slider_box = document.querySelector(".single_slider");
+
+
+single_slider_box.addEventListener("mouseover", () => {
+  document.addEventListener("mousemove", parallax);
+})
+
+
+function parallax (e) {
+  product_title.forEach(function(move) {
+   
+    let x = e.clientX *.2
+    let y = e.clientY *.2
+    if(x < 100 && y < 100){
+        move.style.transform = `translate(${x}px, ${y}px)`;
+    }else{
+      move.style.transform = `translate(0px, 0px)`;
+    }
+ 
+  
+    
+  })
+}
+
+
+
+
+
 
 
 //desktop search bar toggle function
@@ -133,15 +162,12 @@ for (let i = 0; i < 5; i++) {
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    autoplay: true, // Enable auto play
-    autoplayTimeout: 2000, // Set the time interval (1 second in this case)
-    autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
-    onTranslated: function(event) {
-      $('.included-items').removeClass('active'); // Reset all items
-      $('.owl-item.active .included-items').addClass('active'); // Add active class to included items in active slide
-  }
+    // autoplay: true, // Enable auto play
+    // autoplayTimeout: 2000, // Set the time interval (1 second in this case)
+    // autoplayHoverPause: true,
+    // animateOut: "fadeOut",
+    // animateIn: "fadeIn",
+  
    
    
      
