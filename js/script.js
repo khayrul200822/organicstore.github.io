@@ -15,7 +15,9 @@ function toggleSearchBar(displayValue, opacityValue) {
   desktop_search_bar.style.display = displayValue;
   desktop_search_bar.style.opacity = opacityValue;
 }
-
+desktop_search_bar.addEventListener('scroll', function(event) {
+  event.preventDefault();
+});
 desktop_search_icon.addEventListener("click", () => {
   toggleSearchBar("flex", "1");
 });

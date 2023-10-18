@@ -24,6 +24,10 @@ a {
 /* header style start here */
 header#header {
   border-bottom: 1px solid var(--border_color);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
 }
 
 /* toggler icon style */
@@ -216,13 +220,14 @@ a.nav-link:hover {
   display: none;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: white;
   top: 20px;
   right: 0%;
-  backdrop-filter: blur(10px);
   box-shadow: -1px 3px 0px 20px #9999;
   z-index: 2;
   border-radius: 3px;
+  position: fixed;
+ 
 }
 
 
@@ -253,6 +258,7 @@ a.nav-link:hover {
   position: absolute;
   right: 10px;
   color: var(--primary_color);
+  cursor: pointer;
 }
 
 .button_and_search .dstp_search_bar span:hover {
