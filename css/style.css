@@ -118,9 +118,7 @@ span:nth-child(3) {
   top: 16px;
   left: 8px;
 }
-.page_bottom_menu {
- display: none;
-}
+
 
 
 /*----------- header style end here -------------*/
@@ -986,7 +984,7 @@ div#owl_slider .single_slider .p_img_three {
     position: fixed;
     width: 100%;
     bottom: 0;
-    display: unset;
+    display: flex;
   }
   .page_bottom_menu a {
     color: black;
@@ -1050,4 +1048,10 @@ div#owl_slider .single_slider .product_title .p_left_text, .p_right_text {
   .button_and_search .search_bar {
     display: none;
   }
+}
+@media only screen and (min-width: 502px) {
+.page_bottom_menu {
+  display: none !important;
+
+ }
 }
