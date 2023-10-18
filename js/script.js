@@ -12,6 +12,7 @@ const product_title = document.querySelectorAll(".p_title");
 const single_slider_box = document.querySelector(".single_slider");
 
 
+ //text moving with mouse 
 single_slider_box.addEventListener("mouseover", () => {
   document.addEventListener("mousemove", parallax);
 })
