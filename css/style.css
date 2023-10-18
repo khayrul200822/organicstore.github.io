@@ -133,7 +133,20 @@ span:nth-child(3) {
   transition: .4s;
 
 }
-
+.woocommerce_options .product_like_list::after{
+  content: "0";
+  width: 17px;
+  height: 17px;
+  background-color: var(--primary_color);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  transform: translate(9px, -37px);
+  border-radius: 100%;
+  font-weight: bold;
+  position: absolute;
+}
 .woocommerce_options li a:hover {
 
   color: var(--primary_color);

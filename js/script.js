@@ -26,7 +26,7 @@ function parallax (e) {
     if(x < 100 && y < 100){
         move.style.transform = `translate(${x}px, ${y}px)`;
     }else{
-      // move.style.transform = `translate(0px, 0px)`;
+      move.style.transform = `translate(0px, 0px)`;
     }
  
   
@@ -162,11 +162,11 @@ for (let i = 0; i < 5; i++) {
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    // autoplay: true, // Enable auto play
-    // autoplayTimeout: 2000, // Set the time interval (1 second in this case)
-    // autoplayHoverPause: true,
-    // animateOut: "fadeOut",
-    // animateIn: "fadeIn",
+    autoplay: true, // Enable auto play
+    autoplayTimeout: 3000, // Set the time interval (1 second in this case)
+    autoplayHoverPause: true,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
   
    
    
