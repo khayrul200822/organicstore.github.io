@@ -118,6 +118,10 @@ span:nth-child(3) {
   top: 16px;
   left: 8px;
 }
+.page_bottom_menu {
+ display: none;
+}
+
 
 /*----------- header style end here -------------*/
 .woocommerce_options {
@@ -978,6 +982,21 @@ div#owl_slider .single_slider .p_img_three {
 
 /* responsive code for mobile screen */
 @media only screen and (max-width: 502px) {
+  .page_bottom_menu {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: unset;
+  }
+  .page_bottom_menu a {
+    color: black;
+    display: grid;
+    place-items: center;
+    border-right: 1px solid #9999994f;
+  }
+  .page_bottom_menu a:hover{
+    color: var(--primary_color);
+  }
   div#owl_slider .single_slider .bg_shape {
     width: 275px;
     height: 185px;
