@@ -215,19 +215,18 @@ a.nav-link:hover {
 
 .button_and_search .dstp_search_bar {
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 93vh;
   display: none;
   align-items: center;
   justify-content: center;
   background: white;
   top: 20px;
-  right: 0%;
+  right: 1%;
   box-shadow: -1px 3px 0px 20px #9999;
   z-index: 2;
   border-radius: 3px;
   position: fixed;
- 
 }
 
 
