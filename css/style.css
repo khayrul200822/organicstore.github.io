@@ -390,9 +390,7 @@ div#owl_slider .single_slider .p_img_two {
 
   
 }
-.p_img_two img {
-  transform: translate(-130px, 0px);
-} */
+*/
 div#owl_slider .single_slider .p_img_3 {
   z-index: 2;
   transform: translate(278px, 115px);
