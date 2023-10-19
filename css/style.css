@@ -366,31 +366,7 @@ div#owl_slider .single_slider .p_img_two {
   transform: translate(-125px, 100px);
   width: 34%;
 }
-/* .p_img_two img {
- animation: img_fadIn 2s ease-in 1s infinite alternate;
 
-}
-@keyframes img_fadIn {
-  0%{
-    transform: translate(-130px, 0px);
-    opacity: 0;
-    visibility: hidden;
-
-  }
-  50%{
-       opacity: 1;
-    transform: translate(0px, 0px);
-    visibility: visible;
-  }
-  100%{
-    transform: translate(0px, 0px);
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  
-}
-*/
 div#owl_slider .single_slider .p_img_3 {
   z-index: 2;
   transform: translate(278px, 115px);
