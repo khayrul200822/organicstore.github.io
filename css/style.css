@@ -16,8 +16,12 @@
   --primary_color: #88B813;
   --border_color: rgba(130, 130, 130, .25);
   --golden_color: #D99F34;
+  --light_primary_color: #FAFAFA;
+  --gray_black : #333333;
 }
-
+p{
+  margin:0;
+}
 a {
   text-decoration: none !important;
 }
@@ -335,7 +339,7 @@ div#owl_slider .single_slider .slide_child {
 
 div#owl_slider .single_slider .bg_shape {
   z-index: 1;
-  border: 10px solid #ECF1E6;
+  border: 10px solid var(--light_primary_color);
   width: 380px;
   height: 250px;
 }
@@ -442,7 +446,7 @@ section#product_section .product_wrapper .section_title p {
 }
 
 section#product_section {
-  padding: 20px 0px;
+  padding: 80px 0px;
   background: white;
 }
 
@@ -537,7 +541,7 @@ section#product_section .product_wrapper .product_slider .single_product:hover .
 
 section#product_section .product_wrapper .product_slider .single_product .product_manage .view_btn button:hover {
 
-  background-color: #323232;
+  background-color: var(--gray_black);
 
   transition: .3s;
 }
@@ -581,12 +585,12 @@ section#product_section .product_wrapper .product_slider .product_img_content .p
 section#product_section .product_wrapper .product_slider .product_info {
   text-align: center;
   padding: 25px 10px;
-  border: 1px solid #9999993d;
+  border: 1px solid #eeeeee;
   background-color: white;
 }
 
 section#product_section .product_wrapper .product_slider .product_info .product_group {
-  color: #777;
+  color: var(--gray_black);
   transition: .3s;
 }
 
@@ -597,7 +601,7 @@ section#product_section .product_wrapper .product_slider .product_info h4 {
 }
 
 section#product_section .product_wrapper .product_slider .product_info .product_price del {
-  color: #999;
+  color: var(--gray_black);
 
 }
 
@@ -623,7 +627,7 @@ section#product_section .product_wrapper .product_category button:hover {
 
 section#product_section .product_wrapper .product_category button {
   font-size: 18px;
-  color: #333;
+  color: var(--gray_black);
   background: transparent;
   border: none;
   transition: .3s;
@@ -717,17 +721,51 @@ section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vi
   transition: .2s;
 }
 section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:last-child:hover{
-  background-color:#333333;
+  background-color:var(--gray_black);
   transition: .2s;
 }
 section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:first-child{
-  background-color: #333333;
+  background-color: var(--gray_black);
   transition: .2s;
 }
 section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:first-child:hover{
   background-color: var(--primary_color);
   transition: .2s;
 }
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_single_box .vitamin_info h4{
+   color:var(--primary_color);
+}
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_single_box .vitamin_info p{
+  color: #777;
+}
+
+
+/* support area style */
+
+section#vitamin_quantity_section .support_area{
+    background: var(--light_primary_color);
+}
+section#vitamin_quantity_section .support_area .single_support_box {
+    padding: 20px 15px;
+  
+    border-right: 1px solid #e2e2e2b9;
+}
+
+section#vitamin_quantity_section .support_area .single_support_box .s_box_icon {
+    font-size: 35px;
+   padding: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    background: white;
+    margin-right: 28px;
+    color: var(--primary_color);
+}
+
+section#vitamin_quantity_section .support_area .single_support_box .s_box_icon .s_box_info {
+    font-size: 14px;
+}
+
 
 /*vitamin_quantity_section style end here*/
 
