@@ -648,47 +648,47 @@ section#organic_packages {
 
 
 
-section#organic_packages .organic_pakages_wrapper .single_pakage {
+section#organic_packages .organic_packages_wrapper .single_package {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
 }
 
-section#organic_packages .organic_pakages_wrapper .single_pakage .pakage_info {
+section#organic_packages .organic_packages_wrapper .single_package .package_info {
   position: absolute;
   padding: 65px 20px;
   text-align: center;
 }
 
-section#organic_packages .organic_pakages_wrapper .single_pakage .pakage_info h3 {
+section#organic_packages .organic_packages_wrapper .single_package .package_info h3 {
   font-size:24px;
   font-weight: 800;
 }
 
-section#organic_packages .organic_pakages_wrapper .single_pakage .pakage_info h4 {
+section#organic_packages .organic_packages_wrapper .single_package .package_info h4 {
   font-family: 'Niconne', cursive;
   font-weight: 400;
   font-size: 45px;
   color: var(--golden_color);
 }
 
-section#organic_packages .organic_pakages_wrapper .single_pakage.item_2 .pakage_info {
+section#organic_packages .organic_packages_wrapper .single_package.item_2 .package_info {
   right: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-section#organic_packages .organic_pakages_wrapper .single_pakage.item_2 
- .single_pakage:nth-child(2) .pakage_info {
+section#organic_packages .organic_packages_wrapper .single_package.item_2 
+ .single_package:nth-child(2) .package_info {
     left: 0 ;
     right: unset;
 }
-section#organic_packages .organic_pakages_wrapper .single_pakage.item_2 .pakage_info h3 {
+section#organic_packages .organic_packages_wrapper .single_package.item_2 .package_info h3 {
   font-size: 18px;
 }
 
-section#organic_packages .organic_pakages_wrapper .single_pakage.item_2 .pakage_info h4 {
+section#organic_packages .organic_packages_wrapper .single_package.item_2 .package_info h4 {
   font-size: 40px;
 }
 
