@@ -769,6 +769,62 @@ section#vitamin_quantity_section .support_area .single_support_box .s_box_icon .
 
 /*vitamin_quantity_section style end here*/
 
+/*spacial_offer style start here*/
+
+section#spacial_offer_section{
+  background: url(/img/organic-store-img-06.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 40px;
+  margin: 60px 0px;
+}
+section#spacial_offer_section .spacial_offer_wrapper{
+   width: 60vw;
+ 
+}
+section#spacial_offer_section .spacial_offer_wrapper p{
+  color: #777;
+  line-height: 2rem;
+  font-size: 14px;
+
+}
+section#spacial_offer_section .spacial_offer_wrapper span{
+  color: var(--golden_color);  
+  font-size: 20px;
+  font-weight: 600;
+}
+section#spacial_offer_section .spacial_offer_wrapper h2{
+  font-size: 35px;
+  color: var(--gray_black);
+  font-weight: 700;
+}
+section#spacial_offer_section .spacial_offer_wrapper em{
+ color: var(--primary_color);
+ font-size: 15px;
+ font-weight: 600;
+ 
+}
+section#spacial_offer_section .spacial_offer_wrapper button{
+color: white;
+background-color: var(--gray_black);
+transition: .2s;
+border-radius: 5px;
+padding: 12px 25px;
+border: none;
+font-size: 15px;
+}
+section#spacial_offer_section .spacial_offer_wrapper button:hover{
+  color: white;
+  background-color: var(--primary_color);
+  transition: .2s;
+  
+  }
+
+
+/*spacial_offer style end here*/
+
+
 
 
 
@@ -1043,6 +1099,14 @@ section#vitamin_quantity_section .support_area .single_support_box {
  background-color: var(--light_primary_color);
  width: 80vw;
  margin: auto;
+}
+section#spacial_offer_section .spacial_offer_wrapper h2{
+  font-size: 30px;
+  color: var(--gray_black);
+  font-weight: 700;
+}
+section#spacial_offer_section .spacial_offer_wrapper{
+  width: 95vw;
 }
 }
 
