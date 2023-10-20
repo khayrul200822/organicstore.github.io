@@ -13,26 +13,26 @@ const single_slider_box = document.querySelector(".single_slider");
 
 
  //text moving with mouse 
-single_slider_box.addEventListener("mouseover", () => {
-  document.addEventListener("mousemove", parallax);
-})
+// single_slider_box.addEventListener("mouseover", () => {
+//   document.addEventListener("mousemove", parallax);
+// })
 
 
-function parallax (e) {
-  product_title.forEach(function(move) {
+// function parallax (e) {
+//   product_title.forEach(function(move) {
    
-    let x = e.clientX *.2
-    let y = e.clientY *.2
-    if(x < 100 && y < 100){
-        move.style.transform = `translate(${x}px, ${y}px)`;
-    }else{
-      move.style.transform = `translate(0px, 0px)`;
-    }
+//     let x = e.clientX *.2
+//     let y = e.clientY *.2
+//     if(x < 100 && y < 100){
+//         move.style.transform = `translate(${x}px, ${y}px)`;
+//     }else{
+//       move.style.transform = `translate(0px, 0px)`;
+//     }
  
   
     
-  })
-}
+//   })
+// }
 
 
 
@@ -162,11 +162,11 @@ for (let i = 0; i < 5; i++) {
       itemsDesktopSmall: false,
       itemsTablet: false,
       itemsMobile: false,// Enable loop mode
-    autoplay: true, // Enable auto play
-    autoplayTimeout: 3000, // Set the time interval (1 second in this case)
-    autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
+    // autoplay: true, // Enable auto play
+    // autoplayTimeout: 3000, // Set the time interval (1 second in this case)
+    // autoplayHoverPause: true,
+    // animateOut: "fadeOut",
+    // animateIn: "fadeIn",
   
    
    

@@ -17,11 +17,13 @@
   --border_color: rgba(130, 130, 130, .25);
   --golden_color: #D99F34;
   --light_primary_color: #FAFAFA;
-  --gray_black : #333333;
+  --gray_black: #333333;
 }
-p{
-  margin:0;
+
+p {
+  margin: 0;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -142,7 +144,8 @@ span:nth-child(3) {
   transition: .4s;
 
 }
-.woocommerce_options .product_like_list::after{
+
+.woocommerce_options .product_like_list::after {
   content: "0";
   width: 17px;
   height: 17px;
@@ -156,6 +159,7 @@ span:nth-child(3) {
   font-weight: bold;
   position: absolute;
 }
+
 .woocommerce_options li a:hover {
 
   color: var(--primary_color);
@@ -206,7 +210,7 @@ a.nav-link:hover {
   transform: translate(0px, 30%);
   opacity: 0;
   transition: .6s;
- visibility : hidden;
+  visibility: hidden;
 }
 
 .search_bar .mobile_search .search_wrapper {
@@ -330,7 +334,7 @@ div#owl_slider .single_slider {
   background-color: white;
   z-index: 1;
   overflow: hidden;
- 
+
 }
 
 div#owl_slider .single_slider .slide_child {
@@ -360,6 +364,7 @@ div#owl_slider .single_slider .p_img_1 {
   z-index: 3;
   transform: translate(62px, 30px);
 }
+
 div#owl_slider .single_slider .p_img_one {
   z-index: 3;
   transform: translate(120px, 22px);
@@ -370,6 +375,7 @@ div#owl_slider .single_slider .p_img_2 {
   transform: translate(-98px, 153px);
   width: 47%;
 }
+
 div#owl_slider .single_slider .p_img_two {
   z-index: 4;
   transform: translate(-125px, 100px);
@@ -381,6 +387,7 @@ div#owl_slider .single_slider .p_img_3 {
   transform: translate(278px, 115px);
   width: 85%;
 }
+
 div#owl_slider .single_slider .p_img_three {
   z-index: 5;
   transform: translate(202px, -115px);
@@ -399,6 +406,7 @@ div#owl_slider .single_slider .product_title .right_text {
   position: absolute;
   z-index: 4;
 }
+
 div#owl_slider .single_slider .product_title .p_right_text {
   right: -378px;
   top: -117px;
@@ -412,6 +420,7 @@ div#owl_slider .single_slider .product_title .left_text {
   top: -35px;
   z-index: 3;
 }
+
 div#owl_slider .single_slider .product_title .p_left_text {
   position: absolute;
   left: -390px;
@@ -633,8 +642,8 @@ section#product_section .product_wrapper .product_category button {
   transition: .3s;
 }
 
-.p_active{
-    color: var(--primary_color);
+.p_active {
+  color: var(--primary_color);
 }
 
 
@@ -665,7 +674,7 @@ section#organic_packages .organic_packages_wrapper .single_package .package_info
 }
 
 section#organic_packages .organic_packages_wrapper .single_package .package_info h3 {
-  font-size:24px;
+  font-size: 24px;
   font-weight: 800;
 }
 
@@ -683,11 +692,12 @@ section#organic_packages .organic_packages_wrapper .single_package.item_2 .packa
   flex-direction: column;
   justify-content: center;
 }
-section#organic_packages .organic_packages_wrapper .single_package.item_2 
- .single_package:nth-child(2) .package_info {
-    left: 0 ;
-    right: unset;
+
+section#organic_packages .organic_packages_wrapper .single_package.item_2 .single_package:nth-child(2) .package_info {
+  left: 0;
+  right: unset;
 }
+
 section#organic_packages .organic_packages_wrapper .single_package.item_2 .package_info h3 {
   font-size: 18px;
 }
@@ -702,9 +712,11 @@ section#organic_packages .organic_packages_wrapper .single_package.item_2 .packa
 section#vitamin_quantity_section {
   padding: 60px 0px;
 }
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_section_title{
+
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_section_title {
   margin-bottom: 100px;
 }
+
 section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_section_title h2 {
   font-size: 36px;
 }
@@ -714,56 +726,69 @@ section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_section_titl
   margin-top: 20px;
 }
 
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button {padding: 12px 25px;border: none;background: black;color: white;border-radius: 5px;font-size: 15px;}
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button {
+  padding: 12px 25px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+}
 
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:last-child{
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:last-child {
   background-color: var(--primary_color);
   transition: .2s;
 }
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:last-child:hover{
-  background-color:var(--gray_black);
-  transition: .2s;
-}
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:first-child{
+
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:last-child:hover {
   background-color: var(--gray_black);
   transition: .2s;
 }
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:first-child:hover{
+
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:first-child {
+  background-color: var(--gray_black);
+  transition: .2s;
+}
+
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_quantity .vitamin_button button:first-child:hover {
   background-color: var(--primary_color);
   transition: .2s;
 }
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_single_box .vitamin_info h4{
-   color:var(--primary_color);
+
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_single_box .vitamin_info h4 {
+  color: var(--primary_color);
 }
-section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_single_box .vitamin_info p{
+
+section#vitamin_quantity_section .vitamin_quantity_wrapper .vitamin_single_box .vitamin_info p {
   color: #777;
 }
 
 
 /* support area style */
 
-section#vitamin_quantity_section .support_area{
-    background: var(--light_primary_color);
+section#vitamin_quantity_section .support_area {
+  background: var(--light_primary_color);
 }
+
 section#vitamin_quantity_section .support_area .single_support_box {
-    padding: 20px 25px;
-  
-    border-right: 1px solid #e2e2e2b9;
+  padding: 20px 25px;
+
+  border-right: 1px solid #e2e2e2b9;
 }
 
 section#vitamin_quantity_section .support_area .single_support_box .s_box_icon {
-    font-size: 35px;
-   padding: 30px;
-    display: grid;
-    place-items: center;
-    border-radius: 100%;
-    background: white;
-    margin-right: 28px;
-    color: var(--primary_color);
+  font-size: 35px;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  background: white;
+  margin-right: 28px;
+  color: var(--primary_color);
 }
 
 section#vitamin_quantity_section .support_area .single_support_box .s_box_icon .s_box_info {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -771,7 +796,7 @@ section#vitamin_quantity_section .support_area .single_support_box .s_box_icon .
 
 /*spacial_offer style start here*/
 
-section#spacial_offer_section{
+section#spacial_offer_section {
   background: url(/img/organic-store-img-06.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -779,50 +804,83 @@ section#spacial_offer_section{
   padding: 70px 40px;
   margin: 60px 0px;
 }
-section#spacial_offer_section .spacial_offer_wrapper{
-   width: 60vw;
- 
+
+section#spacial_offer_section .spacial_offer_wrapper {
+  width: 60vw;
+
 }
-section#spacial_offer_section .spacial_offer_wrapper p{
+
+section#spacial_offer_section .spacial_offer_wrapper p {
   color: #777;
   line-height: 2rem;
   font-size: 14px;
 
 }
-section#spacial_offer_section .spacial_offer_wrapper span{
-  color: var(--golden_color);  
+
+section#spacial_offer_section .spacial_offer_wrapper span {
+  color: var(--golden_color);
   font-size: 20px;
   font-weight: 600;
 }
-section#spacial_offer_section .spacial_offer_wrapper h2{
+
+section#spacial_offer_section .spacial_offer_wrapper h2 {
   font-size: 35px;
   color: var(--gray_black);
   font-weight: 700;
 }
-section#spacial_offer_section .spacial_offer_wrapper em{
- color: var(--primary_color);
- font-size: 15px;
- font-weight: 600;
- 
+
+section#spacial_offer_section .spacial_offer_wrapper em {
+  color: var(--primary_color);
+  font-size: 15px;
+  font-weight: 600;
+
 }
-section#spacial_offer_section .spacial_offer_wrapper button{
-color: white;
-background-color: var(--gray_black);
-transition: .2s;
-border-radius: 5px;
-padding: 12px 25px;
-border: none;
-font-size: 15px;
+
+section#spacial_offer_section .spacial_offer_wrapper button,
+.discover_button button {
+  color: white;
+  background-color: var(--gray_black);
+  transition: .2s;
+  border-radius: 5px;
+  padding: 12px 25px;
+  border: none;
+  font-size: 15px;
 }
-section#spacial_offer_section .spacial_offer_wrapper button:hover{
+
+section#spacial_offer_section .spacial_offer_wrapper button:hover,
+.discover_button button:hover {
   color: white;
   background-color: var(--primary_color);
   transition: .2s;
-  
-  }
+
+}
 
 
 /*spacial_offer style end here*/
+
+
+/*discover_story_section style start here*/
+section#discover_story_section .discover_wrapper .discover_story .discover_story_upper h2 {
+  font-size: 35px;
+}
+
+section#discover_story_section .discover_wrapper .discover_story .discover_story_upper p {
+  font-size: 14px;
+  color: #777;
+}
+
+section#discover_story_section .discover_wrapper .discover_story .discover_story_upper {
+  margin-bottom: 45px;
+}
+
+section#discover_story_section .discover_wrapper .discover_story .discover_story_lower p {
+  color: #777;
+  font-size: 14px;
+}
+.discover_story_lower .discover__single_features .d_box_icon img {
+  width: 60%;
+}
+/*discover_story_section style end here*/
 
 
 
@@ -899,9 +957,11 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
   div#navbarNav {
     margin-top: 20px;
   }
-  div#owl_slider .single_slider{
+
+  div#owl_slider .single_slider {
     height: 70vh;
   }
+
   div#owl_slider .single_slider .p_img_1 {
     width: 35%;
     transform: translate(50px, 20px);
@@ -939,6 +999,7 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
     top: -35px;
     z-index: 3;
   }
+
   div#owl_slider .single_slider .product_title .p_left_text {
     position: absolute;
     left: -308px;
@@ -949,8 +1010,11 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
   /*product section style*/
 
   section#vitamin_quantity_section .support_area .single_support_box {
-    border-right:1px solid transparent;
+    border-right: 1px solid transparent;
     margin-bottom: 20px
+  }
+  section#discover_story_section .discover_wrapper .discover_story .discover_story_upper p{
+    width: 80vw;
   }
 }
 
@@ -965,9 +1029,9 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
 
 .included-item {
   transform: rotate(90deg);} */
-  /* Add any styles you want for the included items */
-  /* For example, you can set initial position, opacity, etc. */
-  /* This could be animations or transforms as needed */
+/* Add any styles you want for the included items */
+/* For example, you can set initial position, opacity, etc. */
+/* This could be animations or transforms as needed */
 
 /* responsive code for md desktop screen */
 
@@ -1002,12 +1066,14 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
     top: -35px;
     z-index: 3;
   }
-   div#owl_slider .single_slider .product_title .right_text {
+
+  div#owl_slider .single_slider .product_title .right_text {
     right: -250px;
     top: -108px;
     position: absolute;
     z-index: 4;
   }
+
   div#owl_slider .single_slider .product_title .p_left_text {
     position: absolute;
     left: -315px;
@@ -1015,14 +1081,14 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
     z-index: 3;
   }
 
- 
+
   div#owl_slider .single_slider .product_title .p_right_text {
     right: -208px;
     top: -38px;
     position: absolute;
     z-index: 4;
   }
-  
+
 }
 
 /* responsive code for laptop screen */
@@ -1057,57 +1123,66 @@ section#spacial_offer_section .spacial_offer_wrapper button:hover{
   div#owl_slider .single_slider .p_img_3 {
     transform: translate(195px, 106px);
   }
+
   div#owl_slider .single_slider .p_img_one {
     z-index: 3;
     transform: translate(105px, 20px);
     width: 70%;
-}
-div#owl_slider .single_slider .p_img_two {
-  z-index: 4;
-  transform: translate(-78px, 76px);
-  width: 45%;
-}
-div#owl_slider .single_slider .p_img_three {
-  z-index: 5;
-  transform: translate(175px, -90px);
-  width: 16%;
-}
-div#owl_slider .single_slider .product_title .p_left_text {
-  position: absolute;
-  left: -220px;
-  top: -85px;
-  z-index: 3;
-}
+  }
+
+  div#owl_slider .single_slider .p_img_two {
+    z-index: 4;
+    transform: translate(-78px, 76px);
+    width: 45%;
+  }
+
+  div#owl_slider .single_slider .p_img_three {
+    z-index: 5;
+    transform: translate(175px, -90px);
+    width: 16%;
+  }
+
+  div#owl_slider .single_slider .product_title .p_left_text {
+    position: absolute;
+    left: -220px;
+    top: -85px;
+    z-index: 3;
+  }
 
 
-div#owl_slider .single_slider .product_title .p_right_text {
-  right: -170px;
-  top: -30px;
-  position: absolute;
-  z-index: 4;
-}
-div#owl_slider .single_slider .product_title .p_left_text, .p_right_text {
-  font-size: 50px;
-  letter-spacing: -8px;
-}
+  div#owl_slider .single_slider .product_title .p_right_text {
+    right: -170px;
+    top: -30px;
+    position: absolute;
+    z-index: 4;
+  }
 
-section#vitamin_quantity_section .support_area{
-  background: transparent;
-}
-section#vitamin_quantity_section .support_area .single_support_box {
-  border-right:1px solid transparent;
- background-color: var(--light_primary_color);
- width: 80vw;
- margin: auto;
-}
-section#spacial_offer_section .spacial_offer_wrapper h2{
-  font-size: 30px;
-  color: var(--gray_black);
-  font-weight: 700;
-}
-section#spacial_offer_section .spacial_offer_wrapper{
-  width: 95vw;
-}
+  div#owl_slider .single_slider .product_title .p_left_text,
+  .p_right_text {
+    font-size: 50px;
+    letter-spacing: -8px;
+  }
+
+  section#vitamin_quantity_section .support_area {
+    background: transparent;
+  }
+
+  section#vitamin_quantity_section .support_area .single_support_box {
+    border-right: 1px solid transparent;
+    background-color: var(--light_primary_color);
+    width: 80vw;
+    margin: auto;
+  }
+
+  section#spacial_offer_section .spacial_offer_wrapper h2 {
+    font-size: 30px;
+    color: var(--gray_black);
+    font-weight: 700;
+  }
+
+  section#spacial_offer_section .spacial_offer_wrapper {
+    width: 95vw;
+  }
 }
 
 /* responsive code for tablets screen */
@@ -1132,35 +1207,43 @@ section#spacial_offer_section .spacial_offer_wrapper{
     transform: translate(185px, 100px);
     width: 95%;
   }
+
   div#owl_slider .single_slider .p_img_one {
     z-index: 3;
     transform: translate(100px, 20px);
     width: 90%;
-}
-div#owl_slider .single_slider .p_img_two {
-  z-index: 4;
-  transform: translate(-85px, 82px);
-  width: 50%;
-}
-div#owl_slider .single_slider .p_img_three {
-  z-index: 5;
-  transform: translate(170px, -100px);
-  width: 20%;
-}
-  section#product_section .product_wrapper .section_title h2{
+  }
+
+  div#owl_slider .single_slider .p_img_two {
+    z-index: 4;
+    transform: translate(-85px, 82px);
+    width: 50%;
+  }
+
+  div#owl_slider .single_slider .p_img_three {
+    z-index: 5;
+    transform: translate(170px, -100px);
+    width: 20%;
+  }
+
+  section#product_section .product_wrapper .section_title h2 {
     font-size: 25px;
   }
-  section#product_section .product_wrapper .section_title p{
+
+  section#product_section .product_wrapper .section_title p {
     line-height: 1.5rem;
   }
+
   div#owl_slider .single_slider .bg_shape {
     width: 318px;
     height: 210px;
   }
-  div#owl_slider .single_slider{
+
+  div#owl_slider .single_slider {
     height: 55vh;
   }
-  .owl-theme .owl-nav{
+
+  .owl-theme .owl-nav {
     transform: translate(0px, -420%);
   }
 
@@ -1175,8 +1258,9 @@ div#owl_slider .single_slider .p_img_three {
     position: absolute;
     z-index: 4;
   }
-   div#owl_slider .single_slider .product_title .p_right_text {
-    right: -128px;
+
+  div#owl_slider .single_slider .product_title .p_right_text {
+    right: -105px;
     top: -22px;
     position: absolute;
     z-index: 4;
@@ -1188,13 +1272,16 @@ div#owl_slider .single_slider .p_img_three {
     top: -25px;
     z-index: 3;
   }
+
   div#owl_slider .single_slider .product_title .p_left_text {
     position: absolute;
     left: -185px;
     top: -80px;
     z-index: 3;
   }
-  div#owl_slider .single_slider .product_title .p_left_text, .p_right_text {
+
+  div#owl_slider .single_slider .product_title .p_left_text,
+  .p_right_text {
     font-size: 35px;
     letter-spacing: -5px;
   }
@@ -1211,15 +1298,22 @@ div#owl_slider .single_slider .p_img_three {
     bottom: 0;
     display: flex;
   }
+
   .page_bottom_menu a {
     color: black;
     display: grid;
     place-items: center;
     border-right: 1px solid #9999994f;
   }
-  .page_bottom_menu a:hover{
+
+  .page_bottom_menu a:hover {
     color: var(--primary_color);
   }
+
+  div#owl_slider .single_slider {
+    height: 55vh;
+  }
+
   div#owl_slider .single_slider .bg_shape {
     width: 275px;
     height: 185px;
@@ -1239,45 +1333,136 @@ div#owl_slider .single_slider .p_img_three {
     transform: translate(-105px, -98px) rotate(326deg);
     width: 30%;
   }
+
   div#owl_slider .single_slider .p_img_one {
     z-index: 3;
     transform: translate(95px, 11px);
     width: 95%;
-}
-div#owl_slider .single_slider .p_img_two {
-  z-index: 4;
-  transform: translate(-80px, 75px);
-  width: 45%;
-}
-div#owl_slider .single_slider .p_img_three {
-  z-index: 5;
-  transform: translate(150px, -88px);
-  width: 20%;
-}
-div#owl_slider .single_slider .product_title .p_left_text {
-  position: absolute;
-  left: -185px;
-  top: -60px;
-  z-index: 3;
-}
-div#owl_slider .single_slider .product_title .p_left_text, .p_right_text {
-  font-size: 35px;
-  letter-spacing: -5px;
-}
+  }
+
+  div#owl_slider .single_slider .p_img_two {
+    z-index: 4;
+    transform: translate(-80px, 75px);
+    width: 45%;
+  }
+
+  div#owl_slider .single_slider .p_img_three {
+    z-index: 5;
+    transform: translate(150px, -88px);
+    width: 20%;
+  }
+
+  div#owl_slider .single_slider .product_title .p_left_text {
+    position: absolute;
+    left: -185px;
+    top: -60px;
+    z-index: 3;
+  }
+
+  div#owl_slider .single_slider .product_title .p_left_text,
+  .p_right_text {
+    font-size: 35px;
+    letter-spacing: -5px;
+  }
 
 
 }
+
+@media only screen and (max-width: 450px) {
+  div#owl_slider .single_slider .bg_shape {
+    width: 215px;
+    height: 150px;
+  }
+
+  div#owl_slider .single_slider .p_img_1 {
+    width: 60%;
+    transform: translate(43px, 3px);
+  }
+
+  div#owl_slider .single_slider .p_img_2 {
+    transform: translate(-45px, 80px);
+    width: 62%;
+  }
+
+  div#owl_slider .single_slider .p_img_3 {
+    transform: translate(135px, 75px);
+    width: 100%;
+  }
+
+  div#owl_slider .single_slider .p_img_4 {
+    transform: translate(-77px, -80px) rotate(326deg);
+    width: 25%;
+  }
+
+  div#owl_slider .single_slider .p_img_one {
+    z-index: 3;
+    transform: translate(77px, 6px);
+    width: 95%;
+  }
+
+  div#owl_slider .single_slider .p_img_two {
+    z-index: 4;
+    transform: translate(-65px, 60px);
+    width: 45%;
+  }
+
+  div#owl_slider .single_slider .p_img_three {
+    z-index: 5;
+    transform: translate(120px, -70px);
+    width: 20%;
+  }
+
+  div#owl_slider .single_slider .product_title .p_left_text {
+    position: absolute;
+    left: -155px;
+    top: -55px;
+    z-index: 3;
+  }
+
+  div#owl_slider .single_slider .product_title .p_left_text,
+  .p_right_text {
+    font-size: 25px;
+    letter-spacing: -3px;
+  }
+
+  div#owl_slider .single_slider .product_title {
+    font-size: 25px;
+
+  }
+
+  div#owl_slider .single_slider .product_title .right_text {
+    right: -115px;
+    top: -65px;
+    position: absolute;
+    z-index: 4;
+  }
+
+  div#owl_slider .single_slider .product_title .left_text {
+    position: absolute;
+    left: -118px;
+    top: -25px;
+    z-index: 3;
+  }
+  div#owl_slider .single_slider {
+    height: 40vh;
+}
+
+}
+
+
+
 
 /* responsive code for large screen screen */
 @media only screen and (min-width: 992px) {
   .button_and_search .search_bar {
     display: none;
   }
-  
-}
-@media only screen and (min-width: 502px) {
-.page_bottom_menu {
-  display: none !important;
 
- }
+}
+
+@media only screen and (min-width: 502px) {
+  .page_bottom_menu {
+    display: none !important;
+
+  }
 }
