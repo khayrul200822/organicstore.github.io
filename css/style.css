@@ -954,7 +954,7 @@ section#product_list_section .product_list_wrapper .newsletter .newsletter_wrapp
 section#product_list_section .product_list_wrapper .newsletter .newsletter_wrapper .newsletter_mailbox input {
   outline: none;
   border: none;
-  padding: 6px 0px;
+  padding: 6px 10px;
   box-sizing: border-box;
   border-radius: 3px;
   margin-bottom: 20px;
@@ -967,6 +967,8 @@ section#product_list_section .product_list_wrapper .newsletter .newsletter_wrapp
   font-size: 14px;
   background: var(--primary_color);
   color: white;
+  width: 150px;
+ 
 }
 .single_product .single_product_img {
   width: 60%;
@@ -991,8 +993,74 @@ section#product_list_section .product_list_wrapper .newsletter .newsletter_wrapp
   color: var(--primary_color);
   transition: .2s;
 }
-
+.single_p_list_box .owl-nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: -69px;
+  right: 0;
+  font-size: 30px;
+  color: var(--primary_color);
+}
 /*product_list_section style end here*/
+
+/*latest_news_section style start here*/
+section#latest_news_section{
+  padding: 80px 0px ;
+}
+section#latest_news_section .latest_news_wrapper .latest_news_title h2{
+  font-weight: 800;
+}
+section#latest_news_section .latest_news_wrapper .latest_news_title p{
+  color: #777;
+}
+.single_post .content_side .post_info span.grup_btn {
+    width: 115px;
+    text-align: center;
+    background: var(--primary_color);
+    color: white;
+    border-radius: 3px;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+.single_post .content_side .post_info span i {
+    color: var(--primary_color);
+}
+
+.single_post .content_side .post_info span {
+    font-size: 13px;
+}
+
+.single_post .content_side .post_info h3 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.single_post .content_side .post_info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7rem;
+}
+
+.single_post .content_side .post_btn button {
+    border: 2px solid #3333;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 3px;
+    color: #6e6e6e;
+    transition: .2s;
+    background: transparent;
+}
+
+.single_post .content_side .post_btn button:hover {
+    color: var(--primary_color);
+    transition: .2s;
+    border: 2px solid var(--primary_color);
+}
+/*latest_news_section style end here*/
 
 
 
