@@ -1615,11 +1615,11 @@ footer#footer_section .footer-wrapper .single_footer_item .f_social_links a:hove
 /* responsive code for mobile screen */
 @media only screen and (max-width: 502px) {
   .single_post .content_side .post_info h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 .single_post .content_side .post_info p{
-  font-size: 12px;
+  font-size: 14px;
 }
   .page_bottom_menu {
     position: fixed;
