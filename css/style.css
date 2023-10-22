@@ -1009,7 +1009,7 @@ section#latest_news_section{
   padding: 80px 0px ;
 }
 section#latest_news_section .latest_news_wrapper .latest_news_title h2{
-  font-weight: 800;
+  font-weight: 600;
 }
 section#latest_news_section .latest_news_wrapper .latest_news_title p{
   color: #777;
@@ -1058,9 +1058,6 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p{
     color: var(--primary_color);
     transition: .2s;
     border: 2px solid var(--primary_color);
-}
-.post_img {
-    /* overflow: hidden; */
 }
 
 .post_img img {
@@ -1299,7 +1296,9 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p{
 
 @media only screen and (max-width: 768px) {
 
-
+  h2{
+    font-size: 30px;
+  }
   div#owl_slider .single_slider .bg_shape {
     width: 325px;
     height: 210px;
@@ -1391,7 +1390,15 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p{
 
 /* responsive code for tablets screen */
 @media only screen and (max-width: 600px) {
-
+  h2{
+    font-size: 25px !important;
+  }
+  section#product_ads_section .product_ads_wrapper .product_ads_title h2{
+    font-size: 20px !important;
+  }
+  section#product_list_section .product_list_wrapper .single_p_list_box .p_list_title h2{
+    font-size: 18px !important;
+  }
   div#owl_slider .single_slider .p_img_1 {
     width: 55%;
     transform: translate(43px, 15px);
@@ -1496,6 +1503,13 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p{
 
 /* responsive code for mobile screen */
 @media only screen and (max-width: 502px) {
+  .single_post .content_side .post_info h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.single_post .content_side .post_info p{
+  font-size: 12px;
+}
   .page_bottom_menu {
     position: fixed;
     width: 100%;

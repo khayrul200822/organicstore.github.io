@@ -173,6 +173,38 @@ $(document).ready(function () {
 
 })
 
+//****swiper script */
+var swiper = new Swiper(".mySwiper", {
+  // slidesPerView: 1,
+
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    640: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+  },
+
+});
+
+
+
 //Mixitup plugin call
 var mixer = mixitup('.product_slider');
 
