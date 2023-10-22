@@ -176,7 +176,7 @@ $(document).ready(function () {
 //****swiper script */
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
-
+autoplay:true,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
