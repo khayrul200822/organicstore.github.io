@@ -173,6 +173,10 @@ $(document).ready(function () {
 
 })
 
+
+
+
+
 //****swiper script */
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,

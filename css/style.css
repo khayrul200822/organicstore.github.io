@@ -1085,6 +1085,13 @@ section#latest_news_section .latest_news_wrapper .latest_news_title p{
 /*latest_news_section style end here*/
 
 
+/*product_image_slider style start here*/
+section#product_image_slider{
+  background-color: var(--primary_color);
+}
+
+/*product_image_slider style end here*/
+
 
 
 
