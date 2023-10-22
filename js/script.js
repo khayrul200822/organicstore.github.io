@@ -207,6 +207,39 @@ autoplay:true,
 
 });
 
+//****swiper script */
+var swiper = new Swiper(".mySwiper-2", {
+  // slidesPerView: 1,
+autoplay:true,
+  loop: true,
+  breakpoints: {
+    400: {
+      autoplay:true,
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    600: {
+      autoplay:true,
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    900: {
+      autoplay:true,
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+    1080: {
+      autoplay:true,
+      loop: true,
+      slidesPerView: 5,
+      spaceBetween: 5,
+    },
+  },
+
+});
 
 
 //Mixitup plugin call
