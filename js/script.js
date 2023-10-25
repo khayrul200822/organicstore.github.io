@@ -241,7 +241,8 @@ autoplay:true,
 
 });
 
-
+// top to bottom toggle button 
+$.elevator();
 //Mixitup plugin call
 var mixer = mixitup('.product_slider');
 
