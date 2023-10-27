@@ -10,33 +10,46 @@ const product_item_message = document.querySelector(".product_msg");
 const product_group = document.querySelectorAll(".p_group");
 const product_title = document.querySelectorAll(".p_title");
 const single_slider_box = document.querySelector(".single_slider");
-
-
-//text moving with mouse 
-// single_slider_box.addEventListener("mouseover", () => {
-//   document.addEventListener("mousemove", parallax);
-// })
-
-
-// function parallax (e) {
-//   product_title.forEach(function(move) {
-
-//     let x = e.clientX *.2
-//     let y = e.clientY *.2
-//     if(x < 100 && y < 100){
-//         move.style.transform = `translate(${x}px, ${y}px)`;
-//     }else{
-//       move.style.transform = `translate(0px, 0px)`;
-//     }
+const popup_exit_btn = document.querySelector(".exit_icon");
+const popup_overlay = document.querySelector(".popup_overlay");
+const popup_show_btn = document.querySelectorAll(".view_btn button");
+const popup_page = document.querySelector(".popup_content");
+const popup_product_img = document.querySelector(".popup_p_img");
+console.log(popup_product_img)
 
 
 
-//   })
-// }
+//  popup image changing
+let popup_img = [
+  "./img/p_a1.jpg",
+  "./img/man_sut.jpg",
+  "./img/watch.jpg",
+  "./img/man_ganji.jpg",
+  "./img/man_jcket.jpg",
+  "./img/man_tshirt.jpg",
+  "./img/man_shart.jpg",
+  "./img/ban_jersey.jpg"
+];
 
+// popup screen show function
+for (let i = 0; i < 8; i++) {
+  popup_show_btn[i].addEventListener("click", function () {
+    let current_product = popup_img[i];
+    popup_product_img.setAttribute("src", current_product);
+    popup_page.style.transform = "scale(1)";
+    popup_page.style.transition = ".4s";
+    popup_overlay.style.display = "flex";
+  });
+}
+popup_exit_btn.addEventListener("click", popup_hide);
 
+//popup screen hide function
+function popup_hide() {
+  popup_page.style.transform = "scale(0)";
+  popup_page.style.transition = ".4s";
+  popup_overlay.style.display = "none";
 
-
+}
 
 
 
@@ -180,7 +193,7 @@ $(document).ready(function () {
 //****swiper script */
 var swiper = new Swiper(".mySwiper", {
   // slidesPerView: 1,
-autoplay:true,
+  autoplay: true,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -210,29 +223,29 @@ autoplay:true,
 //****swiper script */
 var swiper = new Swiper(".mySwiper-2", {
   // slidesPerView: 1,
-autoplay:true,
+  autoplay: true,
   loop: true,
   breakpoints: {
     400: {
-      autoplay:true,
+      autoplay: true,
       loop: true,
       slidesPerView: 2,
       spaceBetween: 0,
     },
     600: {
-      autoplay:true,
+      autoplay: true,
       loop: true,
       slidesPerView: 3,
       spaceBetween: 0,
     },
     900: {
-      autoplay:true,
+      autoplay: true,
       loop: true,
       slidesPerView: 4,
       spaceBetween: 5,
     },
     1080: {
-      autoplay:true,
+      autoplay: true,
       loop: true,
       slidesPerView: 5,
       spaceBetween: 5,

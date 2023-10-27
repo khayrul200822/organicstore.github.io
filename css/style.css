@@ -1227,15 +1227,124 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   top: 0;
   left: 0;
   right: 0;
+  display: none;
 }
 
 .popup_overlay .popup_content {
-  width: 80vw;
+  width: 90vw;
   height: 80vh;
   background: white;
   color: black;
   z-index: 2;
-  overflow: hidden;
+  position: relative;
+}
+.popup_img {
+  height: 80vh;
+}
+
+.popup_img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.popup_info {
+  overflow: auto;
+  margin-right: 20px;
+}
+.popup_info .wishlist{
+  color: var(--primary_color);
+  font-weight: 600;
+  font-size: 14px;
+}
+.popup_info h3 {
+  font-size: 22px;
+  padding-top: 30px;
+  transition: .3s;
+  line-height: 1.9rem;
+  margin-right: 40px;
+}
+
+.popup_info h3:hover {
+  color: var(--primary_color);
+  transition: .3s;
+}
+
+.popup_info b {
+  font-size: 20px;
+  transition: .3s;
+  color: var(--primary_color);
+}
+
+.popup_info p {
+  font-size: 14px;
+  color: #666;
+}
+
+.popup_info button {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: var(--primary_color);
+  color: white;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  transition: .3s;
+}
+.popup_overlay .popup_content .exit_icon:hover {
+  transform: scale(1.1);
+  transition: .2s;
+  border: 2px solid #c7c4c4;
+}
+.popup_overlay .popup_content .exit_icon {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  border-radius: 100%;
+  background: #0000008a;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  border: 2px solid transparent;
+}
+
+.popup_info a ul.about_p li {
+  font-size: 14px;
+}
+
+.popup_info ul.about_p li {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.popup_info ul.about_p li span {
+  color: #666;
+}
+
+.popup_social 
+ .share_text {
+    font-weight: 500;
+}
+.popup_info button:hover {
+  background-color: white;
+  color: var(--primary_color);
+  transition: .3s;
+  border: 1px solid var(--primary_color);
+}
+.popup_social .social_link a:hover {
+    background: var(--primary_color);
+    transition: .3s;
+    color: white;
+}
+
+.popup_social .social_link a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
 }
 /* product view popup style end here */
 /* owl carousel some custom style */
@@ -1812,6 +1921,13 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 
 
 /* responsive code for large screen screen */
+@media only screen and (min-width: 900px) {
+  .popup_overlay .popup_content{
+    width: 60vw;
+   
+  }
+ 
+}
 @media only screen and (min-width: 992px) {
   .button_and_search .search_bar {
     display: none;
