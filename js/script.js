@@ -15,8 +15,15 @@ const popup_overlay = document.querySelector(".popup_overlay");
 const popup_show_btn = document.querySelectorAll(".view_btn button");
 const popup_page = document.querySelector(".popup_content");
 const popup_product_img = document.querySelector(".popup_p_img");
+const copyRightYear = document.getElementById("currentYear");
+
 console.log(popup_product_img)
 
+
+//to get current year
+const currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+copyRightYear.textContent = `${currentYear}`;
 
 
 //  popup image changing

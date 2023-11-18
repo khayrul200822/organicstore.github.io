@@ -1237,6 +1237,8 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   color: black;
   z-index: 2;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .popup_img {
   height: 80vh;
@@ -1250,6 +1252,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
 .popup_info {
   overflow: auto;
   margin-right: 20px;
+  padding: 20px 15px;
 }
 .popup_info .wishlist{
   color: var(--primary_color);
@@ -1298,7 +1301,7 @@ footer#footer_section .footer-wrapper .single_footer_item ul li:hover::before {
   border: 2px solid #c7c4c4;
 }
 .popup_overlay .popup_content .exit_icon {
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 20px;
   border-radius: 100%;
